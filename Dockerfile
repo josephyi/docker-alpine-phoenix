@@ -20,7 +20,3 @@ RUN apk add --update inotify-tools git curl make gcc g++ python linux-headers li
 ENV PHOENIX_VERSION=1.1.4
 RUN mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new-${PHOENIX_VERSION}.ez --force
 
-EXPOSE 4000
-
-VOLUME ["/app"]
-WORKDIR /app
