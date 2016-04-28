@@ -3,7 +3,7 @@ FROM msaraiva/elixir-dev:1.2.4
 MAINTAINER Joseph Yi <joe@josephyi.com>
 
 # Borrowed node install from smebberson/alpine-nodejs
-ENV NODE_VERSION=v5.5.0 NPM_VERSION=3
+ENV NODE_VERSION=v6.0.0 NPM_VERSION=3
 RUN apk add --update inotify-tools git curl make gcc g++ python linux-headers libgcc libstdc++ binutils-gold && \
     curl -sSL https://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}.tar.gz | tar -xz && \
     cd /node-${NODE_VERSION} && \
