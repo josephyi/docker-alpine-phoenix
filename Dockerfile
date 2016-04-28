@@ -1,4 +1,4 @@
-FROM msaraiva/elixir-dev:latest
+FROM msaraiva/elixir-dev:1.2.4
 
 MAINTAINER Joseph Yi <joe@josephyi.com>
 
